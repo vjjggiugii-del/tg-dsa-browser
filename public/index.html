@@ -6,29 +6,85 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tg DSA Browser</title>
 <style>
+* { box-sizing: border-box; }
+
 body {
+  margin: 0;
+  min-height: 100vh;
   background: #08090d;
   color: white;
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #12141c;
+  border: 1px solid #252938;
+  border-radius: 20px;
+  padding: 30px 22px;
+  text-align: center;
+  box-shadow: 0 15px 45px #0008;
+}
+
+.logo {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+p {
+  color: #aeb5c7;
+  line-height: 1.8;
+}
+
 button {
+  width: 100%;
   background: #2774e8;
   color: white;
   border: 0;
-  padding: 14px;
-  margin: 6px;
-  border-radius: 10px;
+  padding: 15px;
+  margin-top: 18px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  background: #185cc0;
+}
+
+.footer {
+  margin-top: 22px;
+  font-size: 12px;
+  color: #777f91;
 }
 </style>
 </head>
 <body>
-<h1>Tg DSA Browser</h1>
-<p>متصفح نموذج تيليجرام DSA</p>
-<button onclick="location.href='https://telegram.org/dsa-report'">
-فتح نموذج DSA
-</button>
+
+<div class="container">
+  <div class="logo">🌐</div>
+  <h1>Tg DSA Browser</h1>
+  <p>واجهة لفتح نموذج الإبلاغ الرسمي في تيليجرام</p>
+
+  <button onclick="window.location.href='https://telegram.org/dsa-report'">
+    فتح نموذج DSA
+  </button>
+
+  <div class="footer">
+    Telegram DSA Report
+  </div>
+</div>
+
 </body>
 </html>
-
